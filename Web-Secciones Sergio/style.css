@@ -1,0 +1,41 @@
+Header{
+    background-color: rgb(109, 175, 175);
+    width: 15%;
+    height: 40px;
+    top: 0;
+    position: fixed;
+    left: 0%;
+    padding-top: 10px;
+    text-align: center;
+
+}
+Nav{
+    background-color: rgb(140, 219, 103);
+    width: 85%;
+    height: 40px;
+    top: 0;
+    position: fixed;
+    right: 0%;
+    z-index: 1;
+    text-align: center;
+}
+Aside{
+    background-color: #00b7ff;
+    width: 15%;
+    top: 40px;
+    position: fixed;
+    left: 0%;
+    border-right: solid black;
+    height: 100vh;
+    height: calc (100vh - 40px) ;
+    overflow: auto;
+    box-sizing: border-box;
+}
+Main{
+    background-color: rgb(255, 0, 0);
+    width: 85%;
+    top: 40px;
+    position: absolute;
+    right: 0%;
+    min-height: calc (100vh - 40px) ;
+}
