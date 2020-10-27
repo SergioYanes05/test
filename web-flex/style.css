@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: khaki;
+    margin: 0;
+
+}
+
+div{
+    background-color: green;
+    padding: 5px;
+    height: 150px;
+    width: 150px;
+    order: 5;
+    flex-basis: 10%;
+}
+
+div:nth-of-type(4){
+    font-size: 2em;
+    order: 1;
+    flex-grow: 2;
+    flex-basis: 10%;
+}
+
+div:nth-of-type(5){
+    order: 2;
+    flex-shrink: 2;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    height: 100vh;
+}
+

@@ -1,0 +1,74 @@
+    body{
+        box-sizing: border-box;
+        margin: 0%;
+    }
+
+aside, main, footer{
+    flex-basis: 100%;
+    flex-grow: 1;
+    padding: 15px;
+}
+
+header{
+    background-color: red;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+}
+
+#contenedor-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 107px;
+}
+
+main{
+    order: 2;
+    background-color: plum;
+}
+
+aside{
+    order: 3;
+    background-color: palegreen;
+}
+
+#aside1{
+    order: 3;
+    background-color: cornflowerblue;
+}
+
+#aside2{
+    order: 4;
+    background-color: darkgreen;
+
+}
+
+footer{
+    order: 5;
+    background-color: burlywood;
+}
+
+/*Version para Tablet*/
+
+@media (min-width: 700px){
+    aside{
+        flex-basis: auto;
+    }
+}
+
+/* Version de escrtitorio */
+@media (min-width: 1000px){
+    #aside1{
+        order: 2;
+    }
+
+    main{
+        order: 3;
+        flex-basis: 60%;
+    }
+
+    #aside2{
+        order: 4;
+    }
+}
